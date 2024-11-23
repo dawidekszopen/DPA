@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj książkę/film"
+        android:textSize="40sp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/nazwaBF"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Tytuł kążki lub filmu"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_margin="5dp"
+        android:layout_width="250dp"
+        android:id="@+id/gatunekBF"
+        android:layout_height="wrap_content"
+        android:hint="Gatunek kążki lub filmu"
+        android:layout_gravity="center"
+        />
+    <EditText
+        android:layout_margin="5dp"
+        android:id="@+id/opisBF"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Twoja recenzja lub opis"
+        android:layout_gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/ocenaBFText"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Twoja ocena: 1"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        />
+    <SeekBar
+        android:id="@+id/ocenaBF"
+        android:layout_margin="5dp"
+        android:max="10"
+        android:min="1"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+                <RadioGroup
+                    android:id="@+id/BorFRadioGroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Książka"/>
+                    <RadioButton
+                        android:layout_margin="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Film"/>
+                </RadioGroup>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dodaj książkę/film"/>
+</LinearLayout>
